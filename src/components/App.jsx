@@ -3,7 +3,7 @@ import { ContactForm } from './ContactForm';
 import { ContactsList } from './ContactsList';
 import { Filter } from './Filter';
 
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
 export class App extends Component {
   state = {
     contacts: [
@@ -41,9 +41,6 @@ export class App extends Component {
   };
 
   handleDeleteContact = contactId => {
-    // "3"
-    // [{id: "1"}, {id: "2"}, {id: "3"}]
-    // [{id: "1"}, {id: "2"}]
     this.setState({
       contacts: this.state.contacts.filter(contact => contact.id !== contactId),
     });

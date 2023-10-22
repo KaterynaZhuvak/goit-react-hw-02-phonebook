@@ -7,12 +7,7 @@ export const Filter = ({ handleFilterChangeState }) => {
 
   return (
     <div>
-      <input
-        type="text"
-        name="filter"
-        onChange={handleFilterChange}
-        
-      />
+      <input type="text" name="filter" onChange={handleFilterChange} />
     </div>
   );
-}
+};
